@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sistema.css" />
+    <link
+      rel="stylesheet"
+      href="alinhamento vertical.css"
+    />
+    <link
+      rel="stylesheet"
+      href="alinhamento horizontal.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Solar System</title>
+  </head>
+  <body>
+    <button
+      class="toggleSolarSystemAlignmentButton"
+      data-alignment_mode="vertical"
+    >
+      <img src="setas.png" alt="Rocket Icon" />
+    </button>
+
+    <h1 id="title">
+      <span>Solar</span>
+      <span>System</span>
+    </h1>
+
+    <main id="solar-system">
+      <section class="solar-system__vertical-alignment">
+        <div class="vertical-alignment__circle-axis" id="mercury-axis">
+          <img src="mercurio.png" alt="Mercury Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="venus-axis">
+          <img src="venus.png" alt="Venus Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="earth-axis">
+          <img src="terra.png" alt="Earth Planet" />
+
+          <div id="moon-axis">
+            <img
+              src="lua.png"
+              alt="Full Moon"
+              id="full-moon"
+            />
+          </div>
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="mars-axis">
+          <img src="marte.png" alt="Mars Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="jupiter-axis">
+          <img src="jupiter.png" alt="Jupiter Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="saturn-axis">
+          <img src="saturno.png" alt="Saturn Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="uranus-axis">
+          <img src="urano.png" alt="Uranus Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="neptune-axis">
+          <img src="netuno.png" alt="Neptune Planet" />
+        </div>
+
+        <img src="sol.png" alt="Image of a Sun" class="sun" />
+      </section>
+
+      <section class="solar-system__horizontal-alignment hide">
+        <img src="sol.png" alt="Image of a Sun" class="sun" 
+        title="O Sol é a estrela do sistema solar. Todos os corpos celestes desse sistema, inclusive a Terra, giram em torno dele."/>
+
+        <div class="planet-container" id="mercury-box">
+          <img
+            src="mercurio.png"
+            alt="Mercury Planet"
+            title="Mercúrio é o mais rápido, o mais próximo do sol e o menor planeta do sistema solar."
+          />
+        </div>
+
+        <div class="planet-container" id="venus-box">
+          <img
+            src="venus.png"
+            alt="Venus Planet"
+            title="Vênus é um planeta rochoso, sua superfície ser composta por vales e altas montanhas, cheias de vulcões."
+          />
+        </div>
+
+        <div class="planet-container" id="earth-box">
+          <img
+            src="terra.png"
+            alt="Earth Planet"
+            title="A Terra é considerada um planeta telúrico e possui sua estrutura interna dividida em: crosta terrestre, manto e núcleo."
+          />
+
+          <div id="moon-box">
+            <img
+              src="lua.png"
+              alt="Full Moon"
+              id="moon-box-full-moon"
+              title="A Lua é o único satélite natural da Terra e o quinto maior do Sistema Solar."
+            />
+          </div>
+        </div>
+
+        <div class="planet-container" id="mars-box">
+          <img
+            src="marte.png"
+            alt="Mars Planet"
+            title="Marte é descrito como o 'Planeta Vermelho', porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada. É o segundo menor planeta do sistema solar"
+          />
+        </div>
+
+        <div class="planet-container" id="jupiter-box">
+          <img
+            src="jupiter.png"
+            alt="Jupiter Planet"
+            title="Júpiter é o quinto planeta do Sistema Solar, sendo o maior deles. É gasoso, formado principalmente por hélio e hidrogênio."
+          />
+        </div>
+
+        <div class="planet-container" id="saturn-box">
+          <img
+            src="saturno.png"
+            alt="Saturn Planet"
+            title="Saturno é um planeta gasoso com um sistema formado de anéis de gelo e poeira cósmica. É o segundo maior planeta do Sistema Solar."
+          />
+        </div>
+
+        <div class="planet-container" id="uranus-box">
+          <img
+            src="urano.png"
+            alt="Uranus Planet"
+            title="Urano é o terceiro maior planeta desse sistema e apresenta uma composição de gases como o hidrogênio e o hélio."
+          />
+        </div>
+
+        <div class="planet-container" id="neptune-box">
+          <img
+            src="netuno.png"
+            alt="Neptune Planet"
+            title="Netuno é o último planeta do Sistema Solar, e é azul por conta da sua composição de metano que absorve a luz do Sol. Leva aproximadamente 165 anos para dar uma volta inteira ao redor dele."
+          />
+        </div>
+      </section>
+    </main>
+
+    <script src="sistema.js"></script>
+  </body>
+</html>

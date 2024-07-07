@@ -423,7 +423,7 @@ h2.titulo span{
 
 section.projetos{
     object-fit: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(projetos.jpg), url(Atividade\ 3/galeria);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(projetos.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -450,26 +450,39 @@ section.projetos .flex{
     color: rgb(236, 236, 236);
     padding: 30px;
     border: 2px solid #000000e7;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
     margin: 4% 40px;
     border-radius: 20px;
     transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(41, 41, 41, 0.7)),url(galeria.jpg);
+    background-size: cover;
+    background-position: center;
     width: 250px;
     height: 350px;
-    
+    transition: 3s;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+.projeto1:hover{
+    opacity: 1;
 }
 
 .projetos .projeto1 h3{
     text-align: center;
     justify-content: center;
     margin-top: 70%;
-    color: rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    font-weight: 1;
+    
+
 
 }
 
 .projetos .projeto1:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px rgb(2, 11, 138);
+    background-position: 100% 100%;
 }
 
 .projetos .projeto2{
@@ -477,12 +490,22 @@ section.projetos .flex{
     color: rgb(236, 236, 236);
     padding: 30px;
     border: 2px solid #000000e7;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
     margin: 4% 40px;
     border-radius: 20px;
     transition: 0.2s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(41, 41, 41, 0.7)),url(sistema\ solar.jpeg);
+    background-size: cover;
+    background-position: center;
     width: 250px;
     height: 350px;
+    transition: 3s;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+.projeto2:hover{
+    opacity: 1;
 }
 
 .projetos .projeto2 h3{
@@ -490,11 +513,17 @@ section.projetos .flex{
     justify-content: center;
     margin-top: 70%;
     color: rgb(236, 236, 236);
+    font-weight: 1;
 }
 
 .projetos .projeto2:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px rgb(2, 11, 138);
+    background-position: 100% 100%;
+}
+
+.projetos a{
+    text-decoration: none;
 }
 
 h2.titulo{

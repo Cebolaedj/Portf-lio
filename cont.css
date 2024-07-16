@@ -81,7 +81,11 @@ form .input-group input, textarea{
     font-size: 15px;
     color: antiquewhite;
     transition: all 0.4s ease;
+    justify-content: center;
     align-items: center;
+    text-align-last: center;
+    display: flex;
+    flex-direction: column;
 }
 
 textarea{

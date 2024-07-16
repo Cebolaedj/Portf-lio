@@ -716,11 +716,7 @@ input:hover, textarea:hover{
         display: block;
     }
 
-    section.contat .form-box{
+    section.contat{
         display: none;
-    }
-
-    .contat h2{
-        color: transparent;
     }
 }

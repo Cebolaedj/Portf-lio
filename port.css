@@ -100,7 +100,7 @@ section.home{
 }
 
 .menu-moba nav ul li a:hover{
-    background-color: rgb(243, 135, 34);
+    background-color: rgb(158, 100, 24);
     color: rgb(0, 0, 0);
     display: none;
 }
@@ -117,13 +117,12 @@ section.home{
 }
 
 .logo img{
-    width: 60px;
+    width: 70px;
     cursor: pointer;
-    border: 2px solid transparent;
-    border-color: #ffffff79;
     border-radius: 100%;
     opacity: 0;
     animation: slideRight 2s ease forwards;
+    object-fit: cover;
 }
 
 .logo img:hover{
@@ -133,7 +132,7 @@ section.home{
 .navbar a{
     display: inline-block;
     font-size: 20px;
-    color: rgb(189, 127, 69);
+    color: rgb(158, 102, 25);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -193,7 +192,7 @@ section.home{
 }
 
 .home-content h3 span{
-    color:  rgb(228, 137, 53);
+    color:  rgb(158, 100, 24);
 }
 
 .home-content h3:nth-of-type(2){
@@ -216,10 +215,10 @@ section.home{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid rgb(243, 135, 34);
+    border: 2px solid rgb(158, 100, 24);
     border-radius: 30%;
     font-size: 20px;
-    color: rgb(243, 135, 34);
+    color: rgb(158, 100, 24);
     text-decoration: none;
     margin: 20px 15px 10px 0;
     transition: .5s ease;
@@ -229,18 +228,18 @@ section.home{
 }
 
 .social-media a:hover{
-    background: rgb(243, 135, 34);
-    color:blue;
-    box-shadow: 0 0 28px rgb(243, 135, 34);
+    background: rgb(160, 95, 11);
+    color:rgb(9, 9, 94);
+    box-shadow: 0 0 28px rgb(160, 95, 11);
 }
 
 .btn{
     display: inline-block;
     padding: 12px 28px;
-    background: rgb(243, 135, 34);
+    background: rgb(158, 100, 24);
     border-radius: 40px;
     font-size: 18px;
-    color:blue;
+    color:rgba(37, 31, 9, 0.89);
     letter-spacing: 1px;
     text-decoration: none;
     margin: 20px 15px 15px 0;
@@ -347,7 +346,7 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: rgb(228, 137, 53);
+    color: rgb(158, 100, 24);
 }
 
 section.especialidades{
@@ -386,7 +385,7 @@ section.especialidades .especialidades-box{
 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(2, 11, 138);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 
@@ -418,7 +417,11 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: rgb(228, 137, 53);
+    color: rgb(158, 100, 24);
+}
+
+section.projetos p{
+    display: none;
 }
 
 section.projetos{
@@ -445,11 +448,11 @@ section.projetos .flex{
     align-items: center;
  }
 
-.projetos .projeto1{
+ section.projetos .projeto2{
     object-fit: cover;
     color: rgb(236, 236, 236);
     padding: 30px;
-    border: 2px solid #000000e7;
+    border: 2px solid transparent;
     background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
     margin: 4% 40px;
     border-radius: 20px;
@@ -460,71 +463,44 @@ section.projetos .flex{
     height: 350px;
     transition: 3s;
     cursor: pointer;
-    position: relative;
-    opacity: 0;
-}
+ }
+ 
 
-.projeto1:hover{
-    opacity: 1;
-}
-
-.projetos .projeto1 h3{
-    text-align: center;
-    justify-content: center;
-    margin-top: 70%;
-    color: rgb(255, 255, 255);
-    font-weight: 1;
-    
-
-
+section.projetos .projeto1{
+    object-fit: cover;
+    color: rgb(236, 236, 236);
+    padding: 30px;
+    border: 2px solid transparent;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    margin: 4% 40px;
+    border-radius: 20px;
+    transition: 0.2s;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 350px;
+    transition: 3s;
+    cursor: pointer;
 }
 
 .projetos .projeto1:hover{
+    background-image: url(galeria.jpg);
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(2, 11, 138);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
     background-position: 100% 100%;
 }
 
-.projetos .projeto2{
-    object-fit: cover;
-    color: rgb(236, 236, 236);
-    padding: 30px;
-    border: 2px solid #000000e7;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 350px;
-    transition: 3s;
-    cursor: pointer;
-    position: relative;
-    opacity: 0;
-}
-
-.projeto2:hover{
-    opacity: 1;
-}
-
-.projetos .projeto2 h3{
-    text-align: center;
-    justify-content: center;
-    margin-top: 70%;
-    color: rgb(236, 236, 236);
-    font-weight: 1;
-}
-
 .projetos .projeto2:hover{
+    background-image: url(sistema\ solar.jpg);
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(2, 11, 138);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
     background-position: 100% 100%;
 }
 
 .projetos a{
     text-decoration: none;
 }
+
 
 h2.titulo{
     color: rgb(255, 255, 255);
@@ -537,7 +513,14 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: rgb(228, 137, 53);
+    color: rgb(158, 100, 24);
+}
+
+section.projetos p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
 }
 
 section.contat{
@@ -673,7 +656,7 @@ input:hover, textarea:hover{
     }
 
     .menu-moba .btn-fechar i{
-        color:rgb(243, 135, 34);
+        color:rgb(158, 100, 24);
         font-size: 60px;
         cursor: pointer;
         display: block;
@@ -693,7 +676,7 @@ input:hover, textarea:hover{
     }
 
     .menu-moba nav ul li a:hover{
-        background-color: rgb(243, 135, 34);
+        background-color: rgb(158, 100, 24);
         color: rgb(0, 0, 0);
         display: block;
     }
@@ -717,5 +700,27 @@ input:hover, textarea:hover{
     section.especialidades h2.titulo{
         padding: 30px 0;
         text-align: center;
+    }
+
+    section.projetos .projeto1{
+        background-image: url(galeria.jpg);
+        border: 2px solid rgb(27, 27, 27);
+    }
+
+    section.projetos .projeto2{
+        background-image: url(sistema\ solar.jpg);
+        border: 2px solid rgb(27, 27, 27);
+    }
+
+    section.projetos p{
+        display: block;
+    }
+
+    section.contat .form-box{
+        display: none;
+    }
+
+    .contat h2{
+        color: transparent;
     }
 }

@@ -448,86 +448,131 @@ section.projetos .flex{
     align-items: center;
  }
 
- section.projetos .projeto2{
-    object-fit: cover;
-    color: rgb(236, 236, 236);
-    padding: 30px;
-    border: 2px solid transparent;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-size: cover;
-    background-position: center;
+ section.projetos .container{
+    position: relative;
     width: 250px;
     height: 350px;
-    transition: 3s;
-    cursor: pointer;
- }
- 
+    display: flex;
+    align-items: center;
+}
 
-section.projetos .projeto1{
-    object-fit: cover;
-    color: rgb(236, 236, 236);
-    padding: 30px;
-    border: 2px solid transparent;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
-    margin: 4% 40px;
-    border-radius: 20px;
-    transition: 0.2s;
-    background-size: cover;
-    background-position: center;
+.container:hover .carta{
+    transform: rotateY(180deg);
+}
+
+section.projetos .carta{
+    position: absolute;
     width: 250px;
     height: 350px;
-    transition: 3s;
-    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    text-align: center;
 }
 
-.projetos .projeto1:hover{
-    background-image: url(galeria.jpg);
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(255, 255, 255);
-    background-position: 100% 100%;
+.frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(descartes.png);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
 }
 
-.projetos .projeto2:hover{
+.tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
     background-image: url(sistema\ solar.jpg);
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(255, 255, 255);
-    background-position: 100% 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
 }
 
-.projetos a{
+.container:hover .carta{
+    transform: rotateY(180deg);
+}
+
+section.projetos .carta{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+
+}
+
+.frente2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(John.png);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.tras2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: url(galeria.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+ .tras a{
+    text-align: center;
+    color: #fff;
     text-decoration: none;
 }
 
-
-h2.titulo{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+.tras2 a{
     text-align: center;
-    margin: 0;
-    padding: 30px;
-    animation: slideRight 2s ease forwards;
-    animation-delay: 0s;
+    color: #fff;
+    text-decoration: none;
 }
 
-h2.titulo span{
-    color: rgb(158, 100, 24);
+.projeto1 p{
+    text-decoration: none;
+    color: #000000;
 }
 
-section.projetos p{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-}
+
 
 section.contat{
     object-fit: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(contato.jpg);
     background-position: center;
     background-size: cover;
+    display: block;
 }
 
 section.contat .form-box{
